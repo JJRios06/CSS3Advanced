@@ -1,0 +1,1061 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    height: 100vh;
+}
+
+header {
+    background-color: #ADD8E6;
+    padding: 30px;
+    font-size: 1.7rem;
+    display: grid;
+    grid-template-columns: 80% 50% 40%;
+}
+
+header h1 {
+    font-size: 1.7rem;
+    margin-top: 15px;
+}
+
+nav {
+    background-color: #0000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu .dropdown .dropbtn:hover {
+    background-color: #c0c3d7;
+}
+
+.dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #c0c3d7;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #7D27B5;
+}
+
+/*_____________ADVANCED________________*/
+
+.advanced {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.advanced h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.advanced p {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/*________ROUNDED CORNERS_____*/
+
+.rounded {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.rounded h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.explicacion p {
+    font-size: 1.5rem;
+    background-color: #c0c3d7;
+    border-radius: 10px 10px 10px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.ejemplos-radius {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 15vh;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.ejemplos-radius div:nth-child(1) {
+    margin-left: 5rem;
+}
+
+.ejemplos-radius div:nth-child(2) {
+    margin-left: 25rem;
+}
+
+.ejemplos-radius div:nth-child(3) {
+    margin-left: 45rem;
+}
+
+
+
+.uniformes {
+    background-color: aquamarine;
+    border: 2px solid #000;
+    border-radius: 40px;
+    width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.diferentes {
+    background-color: yellow;
+    border: 2px solid #000;
+    border-radius: 10px 50px 20px 70px;
+    width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.ejes {
+    background-color: red;
+    border: 2px solid #000;
+    border-radius: 40px 10px;
+    width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+
+/*______BORDER IMAGES____*/
+
+.border-images {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.border-images h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.border-images p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+
+}
+
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./images/hearts-border.png) 20 round;
+}
+
+#borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./images/border.png) 30% stretch;
+}
+
+#borderimg2 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./images/border.png) 20% round;
+}
+
+#borderimg3 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./images/border.png) 30% round;
+}
+
+.ejemplos-border-images {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+
+}
+
+.ejemplos-border-images div:nth-child(2) {
+    margin-left: 20rem;
+}
+
+.ejemplos-border-images div:nth-child(3) {
+    margin-left: 40rem;
+}
+
+.stretch {
+    width: 25rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.veinte {
+    width: 25rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.treinta {
+    width: 25rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+/*______CSS Backgrounds_____*/
+
+.backgrounds {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.backgrounds h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.backgrounds p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 2rem;
+}
+
+#example1 {
+    background-image: url(./images/goomba.png), url(./images/fondo-image.jpg);
+    background-position: center bottom, center;
+    background-size: 5rem, 48rem;
+    background-repeat: no-repeat, repeat;
+    height: 17rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/*____CSS Colors___*/
+
+.colors {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.colors h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.colors h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.colors p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.rgba {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    size: 4rem;
+}
+
+#rgba1 {
+    background-color: rgba(0, 0, 255, 0.2);
+    text-align: center;
+}
+
+#rgba2 {
+    background-color: rgba(0, 0, 255, 0.4);
+    text-align: center;
+}
+
+#rgba3 {
+    background-color: rgba(0, 0, 255, 0.6);
+    text-align: center;
+}
+
+#rgba4 {
+    background-color: rgba(0, 0, 255, 0.8);
+    text-align: center;
+}
+
+.hsl {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    size: 4rem;
+}
+
+#hsl1 {
+    background-color: hsl(120, 100%, 50%);
+    text-align: center;
+}
+
+#hsl2 {
+    background-color: hsl(120, 100%, 75%);
+    text-align: center;
+}
+
+#hsl3 {
+    background-color: hsl(120, 100%, 25%);
+    text-align: center;
+}
+
+#hsl4 {
+    background-color: hsl(120, 60%, 70%);
+    text-align: center;
+}
+
+.hsla {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    size: 4rem;
+}
+
+#hsla1 {
+    background-color: hsla(0, 100%, 30%, 0.9);
+    text-align: center;
+}
+
+#hsla2 {
+    background-color: hsla(0, 100%, 50%, 0.7);
+    text-align: center;
+}
+
+#hsla3 {
+    background-color: hsla(0, 100%, 70%, 0.4);
+    text-align: center;
+}
+
+#hsla4 {
+    background-color: hsla(0, 100%, 90%, 0.3);
+    text-align: center;
+}
+
+.opacidad {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    size: 4rem;
+}
+
+#opacidad1 {
+    background-color: rgb(153, 0, 255);
+    opacity: 0.2;
+    text-align: center;
+}
+
+#opacidad2 {
+    background-color: rgb(153, 0, 255);
+    opacity: 0.4;
+    text-align: center;
+}
+
+#opacidad3 {
+    background-color: rgb(153, 0, 255);
+    opacity: 0.6;
+    text-align: center;
+}
+
+#opacidad4 {
+    background-color: rgb(153, 0, 255);
+    opacity: 0.8;
+    text-align: center;
+}
+
+/*____CSS Colors Keywords___*/
+
+.colorsKeywords {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+    background-image: url("./images/fondoAzul.png");
+    background-repeat: no-repeat;
+    background-size: 100rem;
+}
+
+.colorsKeywords h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.colorsKeywords h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.colorsKeywords p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.transparente1 {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    size: 4rem;
+}
+
+.transparente2 {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    size: 4rem;
+}
+
+.current {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.current div:nth-child(2) {
+    margin-left: 20rem;
+}
+
+.current div:nth-child(3) {
+    margin-left: 40rem;
+}
+
+.currentVerde {
+    width: 18rem;
+    height: 10rem;
+    text-align: justify;
+    box-shadow: 0px 0px 15px currentcolor;
+    border: 5px solid currentcolor;
+    color: green;
+}
+
+.currentVerde p {
+    color: black;
+}
+
+.currentMorado {
+    width: 18rem;
+    height: 10rem;
+    text-align: justify;
+    background-color: currentcolor;
+    color: purple;
+}
+
+.currentMorado p {
+    color: white;
+}
+
+.currentAzul {
+    width: 18rem;
+    height: 10rem;
+    text-align: justify;
+    color: blue;
+    border: 10px solid currentcolor;
+}
+
+.currentAzul p {
+    color: black;
+}
+
+/*___CSS Gradients___*/
+
+.gradients {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.gradients h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gradients h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.gradients p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.ejemplos-lineales {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.ejemplos-lineales p:nth-child(2) {
+    margin-left: 21.5rem;
+}
+
+.ejemplos-lineales p:nth-child(3) {
+    margin-left: 40rem;
+}
+
+#lineales1 {
+    background-image: linear-gradient(red, yellow);
+    width: 18rem;
+    height: 10rem;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+#lineales2 {
+    background-image: linear-gradient(to right, red, yellow);
+    width: 18rem;
+    height: 10rem;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+#lineales3 {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    width: 18rem;
+    height: 10rem;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+.ejemplos-angulos {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.ejemplos-angulos p:nth-child(2) {
+    margin-left: 35rem;
+}
+
+#multiple {
+    background-image: linear-gradient(red, yellow, green);
+    width: 25rem;
+    height: 10rem;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+#arcoiris {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    width: 25rem;
+    height: 10rem;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+/*___CSS Shadows__*/
+
+.shadows {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.shadows h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.shadows h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.shadows p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.ejemplos-sombra {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+
+}
+
+.ejemplos-sombra p:nth-child(2) {
+    margin-left: 20rem;
+}
+
+.ejemplos-sombra p:nth-child(3) {
+    margin-left: 40rem;
+}
+
+#sombra1 {
+    width: 16rem;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px red;
+}
+
+#sombra2 {
+    width: 16rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-shadow: 2px 2px 5px red;
+}
+
+#sombra3 {
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.ejemplos-multiples {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+
+}
+
+.ejemplos-multiples p:nth-child(2) {
+    margin-left: 20rem;
+}
+
+.ejemplos-multiples p:nth-child(3) {
+    margin-left: 40rem;
+}
+
+#multi1 {
+    width: 16rem;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#multi2 {
+    width: 16rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#multi3 {
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*CSS Text Effects*/
+
+.botones {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.botones h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.botones h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.botones p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+#boton1 {
+    background-color: #04AA6D;
+    font-size: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#boton2 {
+    background-color: #008CBA;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#boton3 {
+    background-color: #f44336;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#boton4 {
+    background-color: #555555;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*___CSS Pagination___*/
+
+.pagination {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.pagination h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pagination h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.pagination p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.pagination1 {
+    display: inline-block;
+}
+
+.pagination1 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination2 {
+    display: inline-block;
+}
+
+.pagination2 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination2 a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination3 {
+    display: inline-block;
+}
+
+.pagination3 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination3 a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination3 a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+/*___CSS Columnas Multiples*/
+
+
+.colmultiples {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.colmultiples h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.colmultiples h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.colmultiples p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+#colmultiples1 {
+    column-count: 3;
+    background-color: pink;
+    border-radius: 10px;
+    column-gap: 40px;
+}
+
+/*___CSS User Interface___*/
+
+.interface {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.interface h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.interface h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.interface p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.interface1 {
+    border: 2px solid;
+    padding: 10px;
+    width: 50%;
+    resize: horizontal;
+    overflow: auto;
+    display: inline-block;
+    background-color: #ADD8E6;
+}
+
+/*___CSS Box Sizing___*/
+
+.sizing {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid gray;
+    border-radius: 50px;
+}
+
+.sizing h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sizing h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.sizing p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.ejemplos-sizing1 {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.ejemplos-sizing1 div:nth-child(3) {
+    margin-left: 30rem;
+}
+
+.sizing1 {
+    width: 300px;
+    height: 100px;
+    border: 2px solid blue;
+    background-color: #ADD8E6;
+    margin-left: 5rem;
+    padding: 1rem;
+
+}
+
+.sizing2 {
+    width: 400px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: #E3AAAA;
+    padding: 1rem;
+}
+
+.ejemplos-sizing2 {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 15vh 5vh;
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+}
+
+.ejemplos-sizing2 div:nth-child(3) {
+    margin-left: 30rem;
+}
+
+.sizing3 {
+    width: 300px;
+    height: 100px;
+    padding: 30px;
+    border: 2px solid blue;
+    background-color: #ADD8E6;
+    box-sizing: border-box;
+}
+
+.sizing4 {
+    width: 300px;
+    height: 100px;
+    padding: 40px;
+    border: 2px solid red;
+    background-color: #E3AAAA;
+    box-sizing: border-box;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #ADD8E6;
+    text-align: center;
+}
