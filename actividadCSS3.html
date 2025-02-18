@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="./css/stylecss3.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Actividad CSS Advanced</h1>
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">CSS </a>
+                <ul class="dropdown-content">
+                    <li><a onclick="window.location.href='#rounded';">CSS Rounded Corners</a></li>
+                    <li><a onclick="window.location.href='#border-images';">CSS Border Images</a></li>
+                    <li><a onclick="window.location.href='#backgrounds';">CSS Backgrounds</a></li>
+                    <li><a onclick="window.location.href='#colors';">CSS Colors</a></li>
+                    <li><a onclick="window.location.href='#colorsKeywords';">CSS Color Keywords</a></li>
+                    <li><a onclick="window.location.href='#gradients';">CSS Gradients</a></li>
+                    <li><a onclick="window.location.href='#shadows';">CSS Shadows</a></li>
+                    <li><a onclick="window.location.href='#botones';">CSS Buttons</a></li>
+                    <li><a onclick="window.location.href='#pagination';">CSS Pagination</a></li>
+                    <li><a onclick="window.location.href='#colmultiples';">CSS Multiple Columns</a></li>
+                    <li><a onclick="window.location.href='#interface';">CSS User Interface</a></li>
+                    <li><a onclick="window.location.href='#sizing';">CSS Box Sizing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+
+        <div class="advanced">
+            <h1>CSS Advanced</h1>
+            <p>CSS Advanced se refiere a técnicas y características avanzadas de CSS que permiten a los desarrolladores
+                crear diseños web más complejos, interactivos y adaptativos. Con estas técnicas, es posible lograr
+                efectos visuales sofisticados, controlar el diseño en distintas pantallas y dispositivos, y mejorar la
+                interactividad y animación de los elementos en la página.</p>
+        </div>
+
+        <div class="rounded" id="rounded">
+            <div class="explicacion">
+                <h1>CSS Rounded Corners</h1>
+                <p>La propiedad <b>border-radius</b> define el radio de las esquinas de un elemento. Esto agrega un
+                    estilo más suave y moderno a los elementos, como botones, tarjetas y contenedores. Puedes aplicarla
+                    de diferentes maneras para lograr efectos variados.</p>
+            </div>
+            <div class="ejemplos-radius">
+                <div class="uniformes">
+                    <p>Cuando se aplica un solo valor a border-radius, todas las esquinas del elemento se redondean con
+                        ese mismo valor.</p>
+                </div>
+                <div class="diferentes">
+                    <p>Puedes especificar valores diferentes para cada esquina en el siguiente orden: superior
+                        izquierda, superior derecha, inferior derecha, inferior izquierda.</p>
+                </div>
+                <div class="ejes">
+                    <p>También puedes especificar diferentes radios para el eje horizontal (X) y el eje vertical (Y) de
+                        una esquina. Esto se logra usando dos valores por esquina.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-images" id="border-images">
+
+            <h1>CSS Border Images</h1>
+            <p>Con la propiedad CSS border-image, puedes configurar una imagen para que se utilice como borde alrededor
+                de un elemento.</p> <br>
+            <p id="borderimg">
+                La propiedad tiene tres partes: <br>
+                1- La imagen que se utilizará como borde <br>
+                2- Dónde cortar la imagen <br>
+                3- Definir si las secciones intermedias deben repetirse o estirarse. <br><br>
+                La border-image propiedad toma la imagen y la divide en nueve secciones, como un tablero de tres en
+                raya. Luego, coloca las esquinas en las esquinas y las secciones del medio se repiten o se estiran según
+                lo especifique.
+            </p><br>
+            <p>Los diferentes valores de corte cambian por completo el aspecto del borde:</p><br>
+
+            <div class="ejemplos-border-images">
+                <div class="stretch">
+                    <p id="borderimg1">border-image: url(border.png) 30 stretch;</p>
+                </div>
+                <div class="veinte">
+                    <p id="borderimg2">border-image: url(border.png) 20% round;</p>
+                </div>
+                <div class="treinta">
+                    <p id="borderimg3">border-image: url(border.png) 30% round;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="backgrounds" id="backgrounds">
+            <h1>CSS Backgrounds</h1>
+            <p>CSS le permite agregar múltiples imágenes de fondo para un elemento, a través de la
+                background-imagepropiedad. <br>
+                Las diferentes imágenes de fondo están separadas por comas y las imágenes se apilan una encima de otra,
+                donde la primera imagen es la más cercana al espectador.</p>
+
+            <p id="example1"> El siguiente ejemplo tiene dos imágenes de fondo, la primera imagen es un Goomba (alineado
+                en la parte inferior y derecha) y la segunda imagen es un fondo de Super Mario (alineado en el centro
+                abajo)</p>
+        </div>
+
+        <div class="colors" id="colors">
+            <h1>CSS Colors</h1>
+            <h2>Colores RGBA</h2>
+            <p>Los valores de color RGBA son una extensión de los valores de color RGB con un canal alfa, que especifica
+                la opacidad de un color.
+                <br><br>
+                Un valor de color RGBA se especifica con: rgba(rojo, verde, azul, alfa). El parámetro alfa es un número
+                entre 0,0 (totalmente transparente) y 1,0 (totalmente opaco).
+            </p>
+
+            <div class="rgba">
+                <p id="rgba1">rgba(0, 0, 255, 0.2);</p>
+                <p id="rgba2">rgba(0, 0, 255, 0.4);</p>
+                <p id="rgba3">rgba(0, 0, 255, 0.6);</p>
+                <p id="rgba4">rgba(0, 0, 255, 0.8);</p>
+            </div>
+
+            <h2>Colores HSL</h2>
+            <p>HSL significa Tono, Saturación y Luminosidad. <br> <br>
+
+                Un valor de color HSL se especifica con: hsl(tono, saturación, luminosidad). <br><br>
+
+                1. El tono es un grado en la rueda de color (de 0 a 360): <br>
+                - 0 (o 360) es rojo <br>
+                - 120 es verde <br>
+                - 240 es azul <br>
+                2. La saturación es un valor porcentual: 100% es el color completo. <br>
+                3. La luminosidad también es un porcentaje: 0% es oscuro (negro) y 100% es blanco.</p>
+
+            <div class="hsl">
+                <p id="hsl1">hsl(120, 100%, 50%);</p>
+                <p id="hsl2">hsl(120, 100%, 75%);</p>
+                <p id="hsl3">hsl(120, 100%, 25%);</p>
+                <p id="hsl4">hsl(120, 60%, 70%);</p>
+            </div>
+
+            <h2>Colores HSLA</h2>
+            <p>Los valores de color HSLA son una extensión de los valores de color HSL con un canal alfa, que especifica
+                la opacidad de un color. <br><br>
+
+                Un valor de color HSLA se especifica con: hsla(tono, saturación, luminosidad, alfa), donde el parámetro
+                alfa define la opacidad. El parámetro alfa es un número entre 0,0 (totalmente transparente) y 1,0
+                (totalmente opaco).
+            </p>
+            <div class="hsla">
+                <p id="hsla1">hsla(0, 100%, 30%, 0,9);</p>
+                <p id="hsla2">hsla(0, 100%, 50%, 0,7);</p>
+                <p id="hsla3">hsla(0, 100%, 70%, 0,4);</p>
+                <p id="hsla4">hsla(0, 100%, 90%, 0,3);</p>
+            </div>
+
+            <h2>Opacidad</h2>
+            <p>
+                La propiedad CSS opacityestablece la opacidad de todo el elemento (tanto el color de fondo como el texto
+                serán opacos/transparentes). <br><br>
+
+                El opacityvalor de la propiedad debe ser un número entre 0,0 (totalmente transparente) y 1,0 (totalmente
+                opaco).
+            </p>
+            <div class="opacidad">
+                <p id="opacidad1">rgb(153, 0, 255);opacity:0.2;</p>
+                <p id="opacidad2">rgb(153, 0, 255);opacity:0.4;</p>
+                <p id="opacidad3">rgb(153, 0, 255);opacity:0.6;</p>
+                <p id="opacidad4">rgb(153, 0, 255);opacity:0.8;</p>
+            </div>
+        </div>
+
+        <div class="colorsKeywords" id="colorsKeywords">
+            <h1>CCS Color Keywords</h1>
+            <h2>Transparent Keyword</h2>
+            <p>La keyword transparent se utiliza para hacer que un color sea transparente. Esto se suele utilizar para
+                hacer que el color de fondo de un elemento sea transparente.</p>
+            <div class="transparente1">
+                <p>Este div tiene un fondo verde claro.</p>
+            </div> <br>
+            <div class="transparente2">
+                <p>Este div tiene un fondo transparente.</p>
+            </div>
+
+            <h2>Currentcolor Keyword</h2>
+            <p>
+                La currentcolor keyword es como una variable que contiene el valor actual de la propiedad de color de un
+                elemento. <br><br>
+
+                Esta palabra clave puede ser útil si desea que un color específico sea consistente en un elemento o una
+                página. <br>
+            </p>
+
+            <div class="current">
+                <div class="currentVerde">
+                    <p>El color del borde y el color de la sombra de este div se establecen en el valor de color actual
+                        del elemento del cuerpo.</p>
+                </div>
+                <div class="currentMorado">
+                    <p>El color de fondo de este div se establece en el valor de color actual del elemento del cuerpo.
+                    </p>
+                </div>
+                <div class="currentAzul">
+                    <p>Este elemento div tiene un color de texto azul y un borde azul.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gradients" id="gradients">
+            <h1>CSS Gradients</h1>
+            <p>
+                Los degradados CSS le permiten mostrar transiciones suaves entre dos o más colores específicos.
+                <br><br>
+                CSS define tres tipos de degradados:
+                <br><br>
+                Degradados lineales (hacia abajo/arriba/izquierda/derecha/diagonalmente) <br>
+                Gradientes radiales (definidos por su centro) <br>
+                Gradientes cónicos (rotados alrededor de un punto central)
+            </p>
+            <h2>CSS Linear Gradients</h2>
+            <p>
+                Para crear un degradado lineal, debes definir al menos dos niveles de color. Los niveles de color son
+                los colores entre los que quieres crear transiciones suaves. También puedes establecer un punto de
+                inicio y una dirección (o un ángulo) junto con el efecto de degradado.
+            </p> <br>
+            <div class="ejemplos-lineales">
+                <p id="lineales1">Degradado lineal que comienza en la parte superior. Comienza en rojo y pasa al
+                    amarillo</p>
+                <p id="lineales2">Degradado lineal que comienza desde la izquierda. Comienza en rojo y pasa al amarillo
+                </p>
+                <p id="lineales3">Degradado lineal que comienza en la parte superior izquierda (y continúa hasta la
+                    parte inferior derecha). Comienza en rojo y pasa a amarillo</p>
+            </div> <br>
+
+            <h2>Usando Múltiples colores</h2>
+            <p>
+                Si desea tener más control sobre la dirección del gradiente, puede definir un ángulo en lugar de las
+                direcciones predefinidas (hacia abajo, hacia arriba, hacia la derecha, hacia la izquierda, hacia abajo a
+                la derecha, etc.). Un valor de 0 grados equivale a "hacia arriba". Un valor de 90 grados equivale a
+                "hacia la derecha". Un valor de 180 grados equivale a "hacia abajo".
+            </p> <br>
+            <div class="ejemplos-angulos">
+                <p id="multiple">Degradado lineal (de arriba a abajo) con múltiples paradas de color</p>
+                <p id="arcoiris">Degradado lineal (de izquierda a derecha) con el color del arco iris y algo de texto
+                </p>
+            </div>
+        </div>
+
+        <div class="shadows" id="shadows">
+            <h1>CSS Shadows</h1>
+            <p>
+                Con CSS puedes agregar sombra al texto y a los elementos.
+                <br><br>
+                En estos capítulos aprenderás sobre las siguientes propiedades:
+                <br><br>
+                - text-shadow <br>
+                - box-shadow
+            </p>
+            <h2>Sombra de texto</h2><br>
+            <p>
+                La text-shadowpropiedad CSS aplica sombra al texto.
+                <br><br>
+                En su uso más simple, solo especifica la sombra horizontal (2px) y la sombra vertical (2px)
+            </p> <br>
+
+            <div class="ejemplos-sombra">
+                <p id="sombra1">text-shadow: <br> 2px 2px red;</p>
+                <p id="sombra2">text-shadow: <br> 2px 2px 5px red;</p>
+                <p id="sombra3">text-shadow: <br> 2px 2px 4px #000000;</p>
+            </div>
+
+            <h2>Sombras Múltiples</h2>
+            <p>
+                Para agregar más de una sombra al texto, puede agregar una lista de sombras separadas por comas.
+            </p>
+
+            <div class="ejemplos-multiples">
+                <p id="multi1">text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;</p>
+                <p id="multi2">text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;</p>
+                <p id="multi3">text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;</p>
+            </div>
+        </div>
+
+        <div class="botones" id="botones">
+            <h1>CSS Buttons</h1>
+            <p>Aprenda a diseñar botones usando CSS.</p>
+            <div class="ejemplos-botones">
+                <button id="boton1">Verde <br>10 píxeles <br> border-radius: 2px; </button>
+                <button id="boton2">Azul <br>14 píxeles <br>border-radius: 8px;</button>
+                <button id="boton3">Rojo <br>18 píxeles <br>border-radius: 12px;</button>
+                <button id="boton4">Gris <br>20 píxeles <br>border-radius: 50%;</button>
+            </div>
+        </div>
+
+        <div class="pagination" id="pagination">
+            <h1>CSS Pagination</h1>
+            <p>
+                Si tiene un sitio web con muchas páginas, es posible que desee agregar algún tipo de paginación a cada
+                página
+            </p>
+            <h2>Paginación Simple</h2> <br>
+            <div class="pagination1">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+
+            <h2>Paginación activa y flotante</h2> <br>
+            <div class="pagination2">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+
+            <h2>Paginación con borde</h2> <br>
+            <div class="pagination3">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+
+        <div class="colmultiples" id="colmultiples">
+            <h1>CSS Multiple Columns</h1>
+            <p>
+                La propiedad column-count especifica el número de columnas en que se debe dividir un elemento y la
+                propiedad column-gap especifica el espacio entre las columnas.
+                <br><br>
+                El siguiente ejemplo dividirá el texto del elemento en 3 columnas y un espacio de 40 píxeles entre las
+                columnas
+            </p>
+            <p id="colmultiples1">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+                imperdiet doming id quod mazim placerat facer possim assum.
+            </p>
+        </div>
+
+        <div class="interface" id="interface">
+            <h1>CSS User Interface</h1>
+            <h2>Cambio de tamaño de CSS</h2>
+            <br>
+            <div class="interface1">
+                <p>Permita que el usuario cambie el tamaño solo del ancho de este elemento div.</p>
+                <p>Para cambiar el tamaño: haga clic y arrastre la esquina inferior derecha de este elemento div.</p>
+            </div>
+        </div>
+
+        <div class="sizing" id="sizing">
+            <h1>CSS Box Sizing</h1>
+            <p>La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un
+                elemento.</p>
+            <br>
+            <h2>Sin la propiedad CSS box-sizing</h2>
+            <p>
+                De forma predeterminada, el ancho y la altura de un elemento se calculan de la siguiente manera:
+                <br><br>
+                ancho + relleno + borde = ancho real de un elemento <br>
+                alto + relleno + borde = alto real de un elemento <br>
+                <br><br>
+                Esto significa: cuando establece el ancho/alto de un elemento, el elemento a menudo aparece más grande
+                que lo establecido (porque el borde y el relleno del elemento se agregan al ancho/alto especificado del
+                elemento).
+                <br><br>
+                La siguiente ilustración muestra dos elementos div con el mismo ancho y alto especificados
+            </p><br>
+
+            <div class="ejemplos-sizing1">
+                <div class="sizing1">Este div es más pequeño (el ancho es 300px y la altura es 100px).</div>
+                <br>
+                <div class="sizing2">Este div es más grande (el ancho es de 400 px y la altura es de 200 px).
+                </div>
+            </div>
+            <br><br>
+            <h2>Con la propiedad CSS box-sizing</h2> <br>
+            <p>
+                La propiedad box-sizing nos permite incluir el relleno y el borde en el ancho y alto total de un
+                elemento.
+                <br><br>
+                Si lo configura box-sizing: border-box; en un elemento, el relleno y el borde se incluyen en el ancho y
+                la altura
+            </p>
+            <div class="ejemplos-sizing2">
+                <div class="sizing3">¡Ambos divs tienen el mismo tamaño ahora!</div>
+                <br>
+                <div class="sizing4">¡Hurra!</div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p> John Jairo Rios Merizalde | 2024 &copy;</p>
+    </footer>
+
+</body>
+
+</html>
